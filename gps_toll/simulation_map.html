@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_2bd73efc632efbb4c8fd80c4b53b72ee {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_2bd73efc632efbb4c8fd80c4b53b72ee" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_2bd73efc632efbb4c8fd80c4b53b72ee = L.map(
+                "map_2bd73efc632efbb4c8fd80c4b53b72ee",
+                {
+                    center: [12.9716, 77.5946],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 14,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_68ebd1b13dbe337688378451f0ba6488 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_68ebd1b13dbe337688378451f0ba6488.addTo(map_2bd73efc632efbb4c8fd80c4b53b72ee);
+        
+    
+            var marker_69986ca3bea9e623b9c1649377cf6e85 = L.marker(
+                [12.971599999999997, 77.58990000000001],
+                {}
+            ).addTo(map_2bd73efc632efbb4c8fd80c4b53b72ee);
+        
+    
+            marker_69986ca3bea9e623b9c1649377cf6e85.bindTooltip(
+                `<div>
+                     Toll Zone 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f387fabc6c69be30da90345dfc45ae93 = L.marker(
+                [12.978099999999989, 77.59459999999999],
+                {}
+            ).addTo(map_2bd73efc632efbb4c8fd80c4b53b72ee);
+        
+    
+            marker_f387fabc6c69be30da90345dfc45ae93.bindTooltip(
+                `<div>
+                     Toll Zone 2
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c134b57784ccea50c02098d4813cc836 = L.marker(
+                [12.974999999999989, 77.57999999999998],
+                {}
+            ).addTo(map_2bd73efc632efbb4c8fd80c4b53b72ee);
+        
+    
+            marker_c134b57784ccea50c02098d4813cc836.bindTooltip(
+                `<div>
+                     Toll Zone 3
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2561e1066fa0528b6c5a30f11504a985 = L.marker(
+                [12.967999999999995, 77.58499999999997],
+                {}
+            ).addTo(map_2bd73efc632efbb4c8fd80c4b53b72ee);
+        
+    
+            marker_2561e1066fa0528b6c5a30f11504a985.bindTooltip(
+                `<div>
+                     Toll Zone 4
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_883589548ce9c9e575ded6582c60a4a4 = L.marker(
+                [12.9721, 77.5806],
+                {}
+            ).addTo(map_2bd73efc632efbb4c8fd80c4b53b72ee);
+        
+    
+            var icon_e2ca224f4be53e46438b9216438bed38 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "truck", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_883589548ce9c9e575ded6582c60a4a4.setIcon(icon_e2ca224f4be53e46438b9216438bed38);
+        
+    
+            marker_883589548ce9c9e575ded6582c60a4a4.bindTooltip(
+                `<div>
+                     Vehicle 1 (Start)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ebf81bce70504375023fbfc4b2e8923c = L.marker(
+                [12.9781, 77.5946],
+                {}
+            ).addTo(map_2bd73efc632efbb4c8fd80c4b53b72ee);
+        
+    
+            var icon_e056b272bba0c142c7fcbc6e829e5990 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "truck", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_ebf81bce70504375023fbfc4b2e8923c.setIcon(icon_e056b272bba0c142c7fcbc6e829e5990);
+        
+    
+            marker_ebf81bce70504375023fbfc4b2e8923c.bindTooltip(
+                `<div>
+                     Vehicle 1 (End)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_acae48818a4b2d4ad9f2b759b4fd39ba = L.polyline(
+                [[12.9721, 77.5806], [12.9781, 77.5946]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_2bd73efc632efbb4c8fd80c4b53b72ee);
+        
+    
+            var marker_daa226a8726887b0851f8286d86e0ba8 = L.marker(
+                [12.9723, 77.59],
+                {}
+            ).addTo(map_2bd73efc632efbb4c8fd80c4b53b72ee);
+        
+    
+            var icon_cc6a7cf14afd556695b31fcb2bd01924 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "motorcycle", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_daa226a8726887b0851f8286d86e0ba8.setIcon(icon_cc6a7cf14afd556695b31fcb2bd01924);
+        
+    
+            marker_daa226a8726887b0851f8286d86e0ba8.bindTooltip(
+                `<div>
+                     Vehicle 2 (Start)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_56b98a206f77f3b6f0a017fade6d6c55 = L.marker(
+                [12.9716, 77.5899],
+                {}
+            ).addTo(map_2bd73efc632efbb4c8fd80c4b53b72ee);
+        
+    
+            var icon_ac1e14233646c5743ee4920f54e84c1d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "motorcycle", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_56b98a206f77f3b6f0a017fade6d6c55.setIcon(icon_ac1e14233646c5743ee4920f54e84c1d);
+        
+    
+            marker_56b98a206f77f3b6f0a017fade6d6c55.bindTooltip(
+                `<div>
+                     Vehicle 2 (End)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_275edc6a2b83d2fdf686667ad55b811a = L.polyline(
+                [[12.9723, 77.59], [12.9716, 77.5899]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_2bd73efc632efbb4c8fd80c4b53b72ee);
+        
+    
+            var marker_719db812e9bd537510c830d3f4e26c92 = L.marker(
+                [12.97, 77.595],
+                {}
+            ).addTo(map_2bd73efc632efbb4c8fd80c4b53b72ee);
+        
+    
+            var icon_7029b113cb721196173c1cd633b5b8cb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "car", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_719db812e9bd537510c830d3f4e26c92.setIcon(icon_7029b113cb721196173c1cd633b5b8cb);
+        
+    
+            marker_719db812e9bd537510c830d3f4e26c92.bindTooltip(
+                `<div>
+                     Vehicle 3 (Start)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d03e8691d30d291302b17f05908fcee3 = L.marker(
+                [12.974, 77.592],
+                {}
+            ).addTo(map_2bd73efc632efbb4c8fd80c4b53b72ee);
+        
+    
+            var icon_60111d6b9d03fd03bf69708f9a49e8cf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "car", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_d03e8691d30d291302b17f05908fcee3.setIcon(icon_60111d6b9d03fd03bf69708f9a49e8cf);
+        
+    
+            marker_d03e8691d30d291302b17f05908fcee3.bindTooltip(
+                `<div>
+                     Vehicle 3 (End)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_cc383fdfbd9ea938121ed5e432a25f27 = L.polyline(
+                [[12.97, 77.595], [12.974, 77.592]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_2bd73efc632efbb4c8fd80c4b53b72ee);
+        
+</script>
+</html>
